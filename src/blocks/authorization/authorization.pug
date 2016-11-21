@@ -1,2 +1,10 @@
 mixin authorization(additionalClass)
   .authorization(class=additionalClass)
+    .authorization__top
+      a.authorization__top-link(href="#") Вход
+      a.authorization__top-link(href="#") Регистрация
+    input.authorization__input(type="text")
+    input.authorization__input(type="text")
+    .authorization__bottom
+      a.authorization__lost(href="#")
+      button.button.button--small Войти

@@ -1,2 +1,9 @@
-mixin item(additionalClass)
+mixin item(picture, brand, name, price, additionalClass)
   .item(class=additionalClass)
+    .item__picture
+      img.item__img(src="img/" + picture, alt="Parfume")
+    .item__bottom
+      .item__info
+        .item__brand #{brand}
+        .item__name #{name}
+      .item__price #{price} руб

@@ -6,4 +6,41 @@ html(lang='en')
   body
     .wrapper
       +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          +front
+          .tabs.content__tabs
+            +tab('1000 - 2000 руб', 'tab--active')
+            +tab('2000 - 3000 руб')
+            +tab('от 3000 руб')
+            +tab('Акции')
+          .catalog
+            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+            +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
+            +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
+            +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
+            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+            +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
+            +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
+            +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
+            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+        .sidebar
+          +cart-block
+          .side-catalog
+            h2.side-catalog__header ТОП 100 брендов
+            a.side-catalog__link(href="#") Все бренды
+            +brands-list
+      +note('Интернет-магазин парфюмерии Enigme.ru более 9 лет дарит покупателям радость! Мы гордимся высоким уровнем сервиса, низкими ценами на ароматы и высокой лояльностью к покупателям!')
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug
