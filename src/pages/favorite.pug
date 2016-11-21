@@ -4,5 +4,28 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Избранное
+            h1.section__title Избранное
+          .cabinet
+            +favorites
+        .sidebar
+          +cart-block
+          +cabinet-block
+          .side-catalog
+            h2.side-catalog__header Все ароматы
+            +brands-list('brands-list--tiny')
+          +recommendations
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug
