@@ -4,5 +4,45 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Личный кабинет
+            h1.section__title Личный кабинет
+          .cabinet
+            .cabinet__header
+              .cabinet__header-item Владимир
+              .cabinet__header-item Ваш ID номер - 45085
+            .cabinet__stats
+              .cabinet__stats-item Ваша скидка:
+                span.cabinet__stats-item-content 0%
+              .cabinet__stats-item Ваш статус:
+                span.cabinet__stats-item-content Enigme CLUB
+            .cabinet__privilege
+              .cabinet__privilege-header Ваши привелегии:
+              .cabinet__privilege-content Возможность повышения Статуса до "Лояльный" при накоплении покупок на сумму более 3 000 руб. Тогда Ваша скидка на все последующие покупки парфюмерии составит - 3%
+            +sales
+            .cabinet__menu
+              a.cabinet__menu-item(href="#") Распродажа
+              a.cabinet__menu-item(href="#") Скидки и акции
+              a.cabinet__menu-item(href="#") Избранное
+              a.cabinet__menu-item(href="#") Истории покупок
+              a.cabinet__menu-item(href="#") Мои комментарии
+        .sidebar
+          +cart-block
+          +cabinet-block
+          .side-catalog
+            h2.side-catalog__header Все ароматы
+            +brands-list('brands-list--tiny')
+          +recommendations
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug
