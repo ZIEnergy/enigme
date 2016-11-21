@@ -4,5 +4,44 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Доставка
+            h1.section__title Доставка
+          .delivery
+            p.delivery__text Наш интернет-магазин осуществляет доставку по всей России. У нас есть несколько способов доставки: доставка курьером, Почта России, а также большое количество пунктов самовывоза. Чтобы узнать, каким способом вы можете получить заказ в вашем регионе, а также сроки и стоимость доставки, укажите ниже ваш регион и город/населенный пункт. Система автоматически покажет все доступные для вас варианты доставки, сроки и цены.
+            form.delivery__form(action="#", method="get")
+              h2.delivery__section-header Регион доставки:
+              .delivery__form-content
+                .input-item
+                  .input-item__header Регион / Область:
+                  select.input.select
+                .input-item
+                  .input-item__header Уточните район:
+                  select.input.select
+                .input-item
+                  .input-item__header Город / Район:
+                  select.input.select
+            .delivery__options-container
+              h2.delivery__section-header Способ доставки:
+              .delivery__option
+                .delivery__option-header Доставка курьером
+        .sidebar
+          +cart-block
+          +cabinet-block
+          .side-catalog
+            h2.side-catalog__subheader Все ароматы
+            +brands-list('brands-list--small')
+          +recommendations
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug

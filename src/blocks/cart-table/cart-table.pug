@@ -1,2 +1,36 @@
 mixin cart-table(additionalClass)
   .cart-table(class=additionalClass)
+    table.cart--table__content
+      tr.cart-table__header
+        th.cart-table__header-item(colspan="2") Название товара
+        th.cart-table__header-item Цена
+        th.cart-table__header-item Кол-во
+        th.cart-table__header-item Стоимость
+      tr.cart-table__item
+        td.cart-table__item-picture
+          img.cart-table__img(src="img/cart-1.jpg", alt="Parfume")
+        td.cart-table__item-header Thierry Mugler Angel миниатюра 5 мл
+        td.cart-table__item-price 1236 руб
+        td.cart-table__item-amount
+          .cart-table__amount-content
+            .cart-table__amount-number 1
+            .cart-table__amount-controls
+              a.cart-table__amount-controls-item.cart-table__amount-controls-item--more(href="#")
+              a.cart-table__amount-controls-item.cart-table__amount-controls-item--less(href="#")
+        td.cart-table__item-price 1236 руб
+        td.cart-table__item-remove
+          a.cart-table__item-remove-content(href="#")
+    .cart-table__overall
+      .cart-table__overall-item
+        .cart-table__overall-header
+          .cart-table__overall-header-content Сумма заказа:
+        .cart-table__overall-content 1236 руб
+      .cart-table__overall-item
+        .cart-table__overall-header
+          .cart-table__overall-header-content Накопительная скидка:
+          a.cart-table__advice(href="#")
+        .cart-table__overall-content 0%
+      .cart-table__overall-item
+        .cart-table__overall-header
+          .cart-table__overall-header-content Общая сумма: 
+        .cart-table__overall-content.cart-table__final-price 1236 руб

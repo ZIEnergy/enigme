@@ -4,5 +4,46 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section.section--full
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item(href="#") Бренды парфюмерии
+              a.breadcrumbs__item(href="#") Hermes
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Un Jardin Sur Le Nil
+          .cart
+            h1.cart__header Оформление заказа
+            .cart__controls
+              .tabs
+                +tab('Шаг 1.  Авторизация', 'tab--active')
+                +tab('Шаг 2. Адрес и способ доставки')
+              a.cart__order-link(href="#") Начать оформление заказа
+            +cart-table
+            .cart__login
+              h2.cart__login-header Заполните форму или авторизуйтесь:
+              .cart__login-new
+                h3.cart__login-subheader Я здесь впервые
+                form.cart__login-form(action="#", method="post")
+                  .input-item
+                    .input__item-header.input__item-header--required Телефон:
+                    input.input(type="text")
+                  .input-item
+                    .input__item-header.input__item-header--required Телефон:
+                    input.input(type="text")
+                  .input-item
+                    .input__item-header.input__item-header--required Телефон:
+                    input.input(type="text")
+                  button.button Оформить заказ
+              .cart__login-old
+                h3.cart__login-subheader Я уже покупал здесь
+                p.cart__login-text Если Вы уже делали заказ в нашем магазине, то Вы можете оформить заказ через личный кабинет
+                a.button(href="#") Оформить через личный кабинет
+      +sitemap
+      +footer
     include ../templates/scripts.pug

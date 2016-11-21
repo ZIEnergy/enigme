@@ -1,0 +1,9 @@
+mixin catalog-controls(additionalClass)
+  .catalog-controls(class=additionalClass)
+    h1.catalog-controls__header Ароматы 
+      span.catalog-controls__header-brand Abercrombie & Fitch: 
+      | духи и туалетная вода
+    .catalog-controls__categories
+      a.catalog-controls__category-item(href="#") Женские духи
+      a.catalog-controls__category-item(href="#") Мужские духи
+    +sorting
