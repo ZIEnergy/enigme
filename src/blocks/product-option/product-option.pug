@@ -1,2 +1,14 @@
-mixin product-option(additionalClass)
+mixin product-option(name, price, additionalClass)
   .product-option(class=additionalClass)
+    .product-option__name 
+      .product-option__name-content #{name}
+    .product-option__price #{price} руб
+    a.button(href="#") Купить
+    
+mixin product-option--info(name, price, additionalClass)
+  .product-option(class=additionalClass)
+    .product-option__name
+      .product-option__name-content #{name}
+      a.product-option__info(href="#")
+    .product-option__price #{price} руб
+    a.button(href="#") Купить

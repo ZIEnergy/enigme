@@ -4,5 +4,25 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item(href="#") Личный кабинет
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Настройки
+            h1.section__title Регистрация
+          +settings
+        .sidebar
+          +cart-block
+          +cabinet-block
+          +recommendations
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug

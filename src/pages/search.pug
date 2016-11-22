@@ -4,5 +4,31 @@ html(lang='en')
   include ../templates/blocks.pug
   
   body
-    
+    .wrapper
+      +header
+      .content
+        .section
+          .section__top
+            +alphabet
+            +search
+          .section__header
+            .breadcrumbs
+              a.breadcrumbs__item(href="#") Главная
+              a.breadcrumbs__item(href="#") Бренды парфюмерии
+              a.breadcrumbs__item.breadcrumbs__item--active(href="#") Поиск
+            h1.section__title Найдено: (3)
+          .catalog
+            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+        .sidebar
+          +cart-block
+          .side-catalog
+            h2.side-catalog__subheader Все ароматы
+            +brands-list('brands-list--tiny')
+          +recommendations
+      .note Интернет-магазин парфюмерии Enigme.ru более 9 лет дарит покупателям радость! Мы гордимся высоким уровнем сервиса, низкими ценами на ароматы и высокой лояльностью к покупателям!
+      +delivery-block
+      +sitemap
+      +footer
     include ../templates/scripts.pug

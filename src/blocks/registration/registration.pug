@@ -1,2 +1,59 @@
 mixin registration(additionalClass)
-  .registration(class=additionalClass)
+  form.registration(action="#", method="post", class=additionalClass)
+    .registration__row
+      .input-item
+        .input__item-header.input__item-header--required ФИО:
+        input.input(type="text")
+      .input-item
+        .input__item-header.input__item-header--required E-mail:
+        input.input(type="text")
+      .input-item
+        .input__item-header.input__item-header--required Телефон:
+        input.input(type="text")
+    .registration__row
+      .input-item
+        .input__item-header.input__item-header--required Регион/область:
+        input.input(type="text")
+      .input-item
+        .input__item-header.input__item-header--required Уточните район:
+        select.input(type="text")
+      .input-item
+        .input__item-header.input__item-header--required Город/район:
+        input.input(type="text")
+    .registration__row
+      .input-item
+        .input__item-header.input__item-header--required Улица:
+        input.input(type="text")
+    .registration__row
+      .input-item
+        .input__item-header Дом:
+        input.input(type="text")
+      .input-item
+        .input__item-header Корпус:
+        input.input(type="text")
+      .input-item
+        .input__item-header Строение:
+        input.input(type="text")
+      .input-item
+        .input__item-header Квартира:
+        input.input(type="text")
+      .input-item
+        .input__item-header Этаж:
+        input.input(type="text")
+      .input-item
+        .input__item-header Номер домофона:
+        input.input(type="text")
+    .registration__password-options
+      .option-item
+        +roundbutton('password', 'auto', 'Сгенерировать пароль автоматически')
+        +roundbutton('password', 'auto', 'Задать пароль')
+    .registration__row
+      .input-item
+        .input__item-header.input__item-header--required Пароль:
+        input.input(type="text")
+      .input-item
+        .input__item-header.input__item-header--required Повтор пароля:
+        input.input(type="text")
+    .option-item
+      +checkbox('subscribe', 'Подписка на новости и акции')
+    button.button Зарегистрироваться
