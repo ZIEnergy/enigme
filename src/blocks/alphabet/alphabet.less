@@ -1,3 +1,31 @@
 .alphabet {
   
+  &__header {
+    .font-first;
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+  }
+  
+  &__content {
+    display: flex;
+  }
+  
+  &__letter {
+    width: 2.2rem;
+    height: 2.2rem;
+    border: 1px solid #ccc;
+    border-right: 0;
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    .font-first;
+    font-size: 1.3rem;
+    font-weight: 500;
+    
+    &:last-child {
+      border-right: 1px solid #ccc;
+    }
+  }
 }

@@ -1,3 +1,40 @@
 .authorization {
+  max-width: 18rem;
   
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  &__top-link {
+    .font-first;
+    font-size: 1.2rem;
+    color: #000;
+  }
+  
+  &__input {
+    border-radius: 1px;
+    width: 100%;
+    height: 2rem;
+    padding-left: 1rem;
+    
+    &:nth-child(n+2) {
+      margin-top: 1rem;
+    }
+  }
+  
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  &__lost {
+    .font-first;
+    font-size: 1.1rem;
+    color: #000;
+  }
 }

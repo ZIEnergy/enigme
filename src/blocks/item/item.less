@@ -1,3 +1,61 @@
 .item {
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 4.6rem;
   
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+  
+  &:nth-child(n+4) {
+    margin-top: 4.6rem;
+  }
+  
+  &__picture {
+    width: 23rem;
+    height: 23rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border: 2.2rem solid #f0f0f0;
+  }
+  
+  &__img {
+    
+  }
+  
+  &__bottom {
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__info {
+    
+  }
+  
+  &__brand {
+    .font-first;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    color: #000;
+  }
+  
+  &__name {
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #000;
+  }
+  
+  &__price {
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: #000;
+  }
 }

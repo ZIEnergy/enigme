@@ -1,3 +1,38 @@
 .tab {
+  border: 1px solid #666;
+  border-radius: 2px;
+  height: 3.8rem;
+  line-height: 3.8rem;
+  text-align: center;
+  display: inline-block;
+  padding: 0 1.9rem;
+  font-weight: 500;
+  .font-first;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #000;
   
+  &:nth-child(n+2) {
+    margin-left: 2.8rem;
+  }
+  
+  &--active {
+    background: #000;
+    color: #f1dba0;
+    position: relative;
+    
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 1.1rem 1.05rem 0 1.05rem;
+      border-color: #000 transparent transparent transparent;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      margin-left: -1.05rem;
+    }
+  }
 }
