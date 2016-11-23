@@ -94,4 +94,45 @@
       height: 1.2rem;
     }
   }
+  
+  &__cart {
+    color: #000;
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-right: 3.4rem;
+    text-decoration: none;
+    
+    &:before {
+      content: '';
+      display: block;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: url(../img/icon-cart-small.svg) no-repeat;
+      background-size: cover;
+      margin-right: .8rem;
+    }
+  }
+  
+  &__remove {
+    color: #000;
+    .font-first;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    margin-right: 3.8rem;
+    text-decoration: none;
+    
+    &:before {
+      content: '';
+      display: block;
+      width: 1.1rem;
+      height: 1.1rem;
+      background: url(../img/close.svg) no-repeat;
+      background-size: cover;
+      margin-right: .7rem;
+    }
+  }
 }

@@ -18,7 +18,9 @@ html(lang='en')
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Избранное
             h1.section__title Избранное
           .cabinet
-            +favorites
+            .favorites.section__wrapper
+              +unique-item--favorite
+              +unique-item--favorite
         .sidebar
           +cart-block
           +cabinet-block
