@@ -18,38 +18,30 @@ html(lang='en')
               a.breadcrumbs__item(href="#") Бренды парфюмерии
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Abercrombie & Fitch
             +catalog-controls
-          .catalog
-            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
-            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
-            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
-            +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
-            +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
-            +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
-            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
-            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
-            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
-            +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
-            +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
-            +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
+          .section__wrapper
+            .catalog
+              +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+              +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+              +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+              +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
+              +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
+              +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
+              +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+              +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+              +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+              +item('item-4.jpg', 'Paco Rabanne', 'Ricci Ricci', '1268')
+              +item('item-5.jpg', 'Dolce & Gabbana', 'Ricci Ricci', '1268')
+              +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
         .sidebar
           +cart-block
           .side-catalog
             h2.side-catalog__header Все ароматы Abercrombie & Fitch
-              .side-catalog__section
-                h3.side-catalog__subheader Для неё
-                  .brands-list
-                    a.brands-list__item(href="#") 8 Every Moment
-                    a.brands-list__item(href="#") Ezra
-                    a.brands-list__item(href="#") Perfume 8
-                    a.brands-list__item(href="#") Perfume-8 Fleur De Rouge
-              .side-catalog__section
-                h3.side-catalog__subheader Для него
-                  .brands-list
-                    a.brands-list__item(href="#") Colden
-                    a.brands-list__item(href="#") Ezra
-                    a.brands-list__item(href="#") Fierce
-                    a.brands-list__item(href="#") Fierce Confidence
-                    a.brands-list__item(href="#") First Instinct
+            .side-catalog__section
+              h3.side-catalog__subheader Для неё
+              +brands-list('brands-list--tiny')
+            .side-catalog__section
+              h3.side-catalog__subheader Для него
+              +brands-list('brands-list--tiny')
           +recommendations
       +note('Интернет-магазин парфюмерии Enigme.ru более 9 лет дарит покупателям радость! Мы гордимся высоким уровнем сервиса, низкими ценами на ароматы и высокой лояльностью к покупателям!')
       +delivery-block

@@ -1,3 +1,32 @@
 .sorting {
+  display: flex;
+  align-items: flex-start;
   
+  &__header {
+    .font-first;
+    font-size: 1.2rem;
+  }
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+  }
+  
+  &__button {
+    .font-first;
+    font-size: 1.2rem;
+    color: #000;
+    text-decoration: none;
+    padding-bottom: .3rem;
+    
+    &:nth-child(n+2) {
+      margin-left: 1.5rem;
+    }
+    
+    &--active {
+      font-weight: 500;
+      border-bottom: 2px solid #000;
+    }
+  }
 }

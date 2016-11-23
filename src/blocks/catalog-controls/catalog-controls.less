@@ -1,3 +1,42 @@
 .catalog-controls {
+  margin-top: 2.3rem;
   
+  &__header {
+    display: flex;
+    font-size: 2rem;
+    .font-first;
+  }
+  
+  &__header-brand {
+    font-weight: 500;
+    margin: 0 .5rem;
+  }
+  
+  &__categories {
+    display: flex;
+    align-items: center;
+    margin-top: 1.6rem;
+    margin-bottom: 3.7rem;
+    margin-left: -.5rem;
+  }
+  
+  &__category-item {
+    height: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 .5rem;
+    .font-first;
+    color: #000;
+    font-size: 1.6rem;
+    text-decoration: none;
+    
+    &:nth-child(n+2) {
+      margin-left: 2rem;
+    }
+    
+    &--active {
+      background: #000;
+      color: #f1dba0;
+      font-weight: 500;
+    }
+  }
 }
