@@ -1,3 +1,59 @@
 .recommendations {
+  background: #f0f0f0;
+  padding: 2.7rem;
   
+  &__header {
+    font-size: 1.8rem;
+    font-weight: 500;
+    .font-first;
+    text-align: center;
+  }
+  
+  &__list {
+    margin-top: 3.2rem;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    &:nth-child(n+2) {
+      margin-top: 2.5rem;
+    }
+  }
+  
+  &__item-picture {
+    width: 8.4rem;
+    height: 8.4rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    flex: 0 0 auto;
+  }
+  
+  &__item-img {
+    
+  }
+  
+  &__item-content {
+    
+  }
+  
+  &__item-brand {
+    .font-first;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    color: #000;
+  }
+  
+  &__item-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    .font-first;
+    color: #000;
+    line-height: 1.8rem;
+  }
 }
