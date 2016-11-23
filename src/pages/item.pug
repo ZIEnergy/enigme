@@ -18,7 +18,7 @@ html(lang='en')
               a.breadcrumbs__item(href="#") Бренды парфюмерии
               a.breadcrumbs__item(href="#") Hermes /
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Un Jardin Sur Le Nil
-          .product__content
+          .product
             .product__picture
               img.product__picture-img(src="img/product.jpg", alt="Parfume")
               p.product__guarantee 100% гарантия подлинности качества
@@ -60,69 +60,69 @@ html(lang='en')
               +item('item-6.jpg', 'Lacoste', 'Ricci Ricci', '1236')
         .sidebar
           +cart-block
-          +cabinet-block
+          +cabinet-block('sidebar__cabinet-block')
           .side-catalog
-            h2.side-catalog__header Все ароматы Abercrombie & Fitch
-              .side-catalog__section
-                h3.side-catalog__subheader Для неё
-                  .brands-list
-                    a.brands-list__item(href="#") 24 Faubourg
-                    a.brands-list__item(href="#") Amazone
-                    a.brands-list__item(href="#") Caleche
-                    a.brands-list__item(href="#") Caleche Soie De Parfum
-                    a.brands-list__item(href="#") Concentre D`orange Verte
-                    a.brands-list__item(href="#") Cuir d'Ange
-                    a.brands-list__item(href="#") Eau D'Hermes
-                    a.brands-list__item(href="#") Eau D'Orange Verte
-                    a.brands-list__item(href="#") Eau De Gentiane Blanche
-                    a.brands-list__item(href="#") Eau de Mandarine Ambree
-                    a.brands-list__item(href="#") Eau de Neroli Dore
-                    a.brands-list__item(href="#") Eau De Pamplemousse Rose
-                    a.brands-list__item(href="#") Eau de Rhubarbe Ecarlate
-                    a.brands-list__item(href="#") Eau Des Merveilles
-                    a.brands-list__item(href="#") Eau Des Merveilles Clair
-                    a.brands-list__item(href="#") Eau Des Merveilles Edition
-                    a.brands-list__item(href="#") Eau Des Merveilles Elixir
-                    a.brands-list__item(href="#") Hermessence Ambre Narguile
-                    a.brands-list__item(href="#") Hermessence Brin De Regusse
-                    a.brands-list__item(href="#") Hermessence Epice Marine
-                    a.brands-list__item(href="#") Hermessence Paprika Brasil
-                    a.brands-list__item(href="#") Hermessence Poivre Samarcande
-                    a.brands-list__item(href="#") Hermessence Rose Ikebana
-                    a.brands-list__item(href="#") Hermessence Vanille Galante
-                    a.brands-list__item(href="#") Hermessence Vetiver Tonka
-                    a.brands-list__item(href="#") Hiris
-                    a.brands-list__item(href="#") Iris Ukiyoe
-                    a.brands-list__item(href="#") Jour D'Hermes
-                    a.brands-list__item(href="#") Jour d'Hermes Absolu
-                    a.brands-list__item(href="#") Jour D`hermes Gardenia
-                    a.brands-list__item(href="#") Kelly Caleche
-                    a.brands-list__item(href="#") L'Ambre Des Merveilles
-                    a.brands-list__item(href="#") Le Jardin De Monsieur Li
-                    a.brands-list__item(href="#") Osmanthe Yunnan
-                    a.brands-list__item(href="#") Rose Amazone
-                    a.brands-list__item(href="#") Rouge
-                    a.brands-list__item(href="#") Rouge Eau Delicate
-                    a.brands-list__item(href="#") Santal Massoia
-                    a.brands-list__item(href="#") Un Jardin Apres Le Mousson
-                    a.brands-list__item(href="#") Un Jardin En Mediterranee
-                    a.brands-list__item(href="#") Un Jardin Sur Le Nil
-                    a.brands-list__item(href="#") Un Jardin Sur Le Toit
-                    a.brands-list__item(href="#") Voyage D'Hermes
-              .side-catalog__section
-                h3.side-catalog__subheader Для него
-                  .brands-list
-                    a.brands-list__item(href="#") Bel Ami
-                    a.brands-list__item(href="#") Bel Ami Vetiver
-                    a.brands-list__item(href="#") Belame
-                    a.brands-list__item(href="#") Eau D'Orange Verte
-                    a.brands-list__item(href="#") Eau De Narcisse Bleu
-                    a.brands-list__item(href="#") Equipage
-                    a.brands-list__item(href="#") Equipage Geranium
-                    a.brands-list__item(href="#") Rocabar
-                    a.brands-list__item(href="#") Terre D'Hermes
-                    a.brands-list__item(href="#") Terre d'Hermes Eau Tres Fraiche
-                    a.brands-list__item(href="#") Terre D'Hermes Edition
+            h2.side-catalog__header Все ароматы Hermes
+            .side-catalog__section
+              h3.side-catalog__subheader Для неё
+              .brands-list
+                a.brands-list__item(href="#") 24 Faubourg
+                a.brands-list__item(href="#") Amazone
+                a.brands-list__item(href="#") Caleche
+                a.brands-list__item(href="#") Caleche Soie De Parfum
+                a.brands-list__item(href="#") Concentre D`orange Verte
+                a.brands-list__item(href="#") Cuir d'Ange
+                a.brands-list__item(href="#") Eau D'Hermes
+                a.brands-list__item(href="#") Eau D'Orange Verte
+                a.brands-list__item(href="#") Eau De Gentiane Blanche
+                a.brands-list__item(href="#") Eau de Mandarine Ambree
+                a.brands-list__item(href="#") Eau de Neroli Dore
+                a.brands-list__item(href="#") Eau De Pamplemousse Rose
+                a.brands-list__item(href="#") Eau de Rhubarbe Ecarlate
+                a.brands-list__item(href="#") Eau Des Merveilles
+                a.brands-list__item(href="#") Eau Des Merveilles Clair
+                a.brands-list__item(href="#") Eau Des Merveilles Edition
+                a.brands-list__item(href="#") Eau Des Merveilles Elixir
+                a.brands-list__item(href="#") Hermessence Ambre Narguile
+                a.brands-list__item(href="#") Hermessence Brin De Regusse
+                a.brands-list__item(href="#") Hermessence Epice Marine
+                a.brands-list__item(href="#") Hermessence Paprika Brasil
+                a.brands-list__item(href="#") Hermessence Poivre Samarcande
+                a.brands-list__item(href="#") Hermessence Rose Ikebana
+                a.brands-list__item(href="#") Hermessence Vanille Galante
+                a.brands-list__item(href="#") Hermessence Vetiver Tonka
+                a.brands-list__item(href="#") Hiris
+                a.brands-list__item(href="#") Iris Ukiyoe
+                a.brands-list__item(href="#") Jour D'Hermes
+                a.brands-list__item(href="#") Jour d'Hermes Absolu
+                a.brands-list__item(href="#") Jour D`hermes Gardenia
+                a.brands-list__item(href="#") Kelly Caleche
+                a.brands-list__item(href="#") L'Ambre Des Merveilles
+                a.brands-list__item(href="#") Le Jardin De Monsieur Li
+                a.brands-list__item(href="#") Osmanthe Yunnan
+                a.brands-list__item(href="#") Rose Amazone
+                a.brands-list__item(href="#") Rouge
+                a.brands-list__item(href="#") Rouge Eau Delicate
+                a.brands-list__item(href="#") Santal Massoia
+                a.brands-list__item(href="#") Un Jardin Apres Le Mousson
+                a.brands-list__item(href="#") Un Jardin En Mediterranee
+                a.brands-list__item(href="#") Un Jardin Sur Le Nil
+                a.brands-list__item(href="#") Un Jardin Sur Le Toit
+                a.brands-list__item(href="#") Voyage D'Hermes
+            .side-catalog__section
+              h3.side-catalog__subheader Для него
+              .brands-list
+                a.brands-list__item(href="#") Bel Ami
+                a.brands-list__item(href="#") Bel Ami Vetiver
+                a.brands-list__item(href="#") Belame
+                a.brands-list__item(href="#") Eau D'Orange Verte
+                a.brands-list__item(href="#") Eau De Narcisse Bleu
+                a.brands-list__item(href="#") Equipage
+                a.brands-list__item(href="#") Equipage Geranium
+                a.brands-list__item(href="#") Rocabar
+                a.brands-list__item(href="#") Terre D'Hermes
+                a.brands-list__item(href="#") Terre d'Hermes Eau Tres Fraiche
+                a.brands-list__item(href="#") Terre D'Hermes Edition
           +recommendations
       +note('Заказ товара Вы можете сделать через корзину или по телефону в Москве 8 (495) 540-49-20 ')
       +delivery-block
