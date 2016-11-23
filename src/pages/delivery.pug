@@ -18,20 +18,23 @@ html(lang='en')
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Доставка
             h1.section__title Доставка
           .delivery
-            p.delivery__text Наш интернет-магазин осуществляет доставку по всей России. У нас есть несколько способов доставки: доставка курьером, Почта России, а также большое количество пунктов самовывоза. Чтобы узнать, каким способом вы можете получить заказ в вашем регионе, а также сроки и стоимость доставки, укажите ниже ваш регион и город/населенный пункт. Система автоматически покажет все доступные для вас варианты доставки, сроки и цены.
-            form.delivery__form(action="#", method="get")
+            p.delivery__text.section__wrapper Наш интернет-магазин осуществляет доставку по всей России. У нас есть несколько способов доставки: доставка курьером, Почта России, а также большое количество пунктов самовывоза. Чтобы узнать, каким способом вы можете получить заказ в вашем регионе, а также сроки и стоимость доставки, укажите ниже ваш регион и город/населенный пункт. Система автоматически покажет все доступные для вас варианты доставки, сроки и цены.
+            form.delivery__form.section__wrapper(action="#", method="get")
               h2.delivery__section-header Регион доставки:
               .delivery__form-content
                 .input-item
                   .input-item__header Регион / Область:
-                  select.input.select
+                  select.input.select.delivery__select
+                    option(selected) Москва
                 .input-item
                   .input-item__header Уточните район:
-                  select.input.select
+                  select.input.select.delivery__select
+                    option(selected) Москва в пределах МКАД
                 .input-item
                   .input-item__header Город / Район:
-                  select.input.select
-            .delivery__options-container
+                  select.input.select.delivery__select
+                    option(selected) Москва
+            .delivery__options-container.section__wrapper
               h2.delivery__section-header Способ доставки:
               .delivery__option
                 .delivery__option-header Доставка курьером
@@ -41,9 +44,9 @@ html(lang='en')
                     th.delivery__option-item-title Срок
                     th.delivery__option-item-title Цена
                   tr.delivery__option-item-content
-                    td.delivery__option-item-content Enigme Express
-                    td.delivery__option-item-content 1 день
-                    td.delivery__option-item-content Бесплатно
+                    td.delivery__option-item-text Enigme Express
+                    td.delivery__option-item-text 1 день
+                    td.delivery__option-item-text Бесплатно
               .delivery__option
                 .delivery__option-header Самовывоз
                 table.delivery__option-item
@@ -52,35 +55,36 @@ html(lang='en')
                     th.delivery__option-item-title Срок
                     th.delivery__option-item-title Цена
                   tr.delivery__option-item-content
-                    td.delivery__option-item-content 
-                      span.delivery__metro м. Братиславская
+                    td.delivery__option-item-text.delivery__option-item-text--metro
+                      span.delivery__metro.delivery__metro--green м. Братиславская
                       |, ул. Братиславская, д. 16 корп 2
-                    td.delivery__option-item-content 2 дня
-                    td.delivery__option-item-content Бесплатно
+                    td.delivery__option-item-text 2 дня
+                    td.delivery__option-item-text Бесплатно
                   tr.delivery__option-dscr-container
                     td.delivery__option-dscr(colspan="3") 10:00-20:00 м. Братиславская. Выход в город на ул. Братиславская. Из стеклянных дверей направо до конца, по ступенькам налево. Идти прямо по Братиславской улице. Между домами 14 и 16/1, в котором находится Макдональдс, повернуть направо. Перед вами будет магазин «Пятерочка». На цокольном этаже магазина находится Пункт Самовывоза.
                   tr.delivery__option-item-content
-                    td.delivery__option-item-content 
-                      span.delivery__metro м. Бульвар Дмитрия Донского
+                    td.delivery__option-item-text.delivery__option-item-text--metro
+                      span.delivery__metro.delivery__metro--grey м. Бульвар Дмитрия Донского
                       |, ул. Старокачаловская, д. 5А
-                    td.delivery__option-item-content 2 дня
-                    td.delivery__option-item-content Бесплатно
+                    td.delivery__option-item-text 2 дня
+                    td.delivery__option-item-text Бесплатно
                   tr.delivery__option-dscr-container
                     td.delivery__option-dscr(colspan="3") 10:00-22:00 Последний вагон из центра, из стеклянных дверей направо и налево вверх по ступенькам. Справа ТЦ «Круг», 1 этаж, зеленая галерея. По галерее прямо и налево до конца, справа пункт выдачи заказов.
                   tr.delivery__option-item-content
-                    td.delivery__option-item-content 
-                      span.delivery__metro м. ВДНХ
+                    td.delivery__option-item-text.delivery__option-item-text--metro
+                      span.delivery__metro.delivery__metro--orange м. ВДНХ
                       |, Проспект Мира д. 176
-                    td.delivery__option-item-content 2 дня
-                    td.delivery__option-item-content Бесплатно
+                    td.delivery__option-item-text 2 дня
+                    td.delivery__option-item-text Бесплатно
                   tr.delivery__option-dscr-container
-                    td.delivery__option-dscr(colspan="3") 10:00-22:00 Вам нужен 1-й вагон из центра, перейдите по подземному переходу на другую сторону пр. Мира. Далее идите вдоль здания гостиницы «Космос», до магазина «Феликс», «Сток-Центр», бывший «Дом Оптики», повернуть за него на право и до конца здания. Пункт выдачи заказов дверь слева.
+                    td.delivery__option-dscr.delivery__option-dscr--noborder(colspan="3") 10:00-22:00 Вам нужен 1-й вагон из центра, перейдите по подземному переходу на другую сторону пр. Мира. Далее идите вдоль здания гостиницы «Космос», до магазина «Феликс», «Сток-Центр», бывший «Дом Оптики», повернуть за него на право и до конца здания. Пункт выдачи заказов дверь слева.
         .sidebar
           +cart-block
-          +cabinet-block
+          +cabinet-block('sidebar__cabinet-block')
           .side-catalog
-            h2.side-catalog__subheader Все ароматы
-            +brands-list('brands-list--small')
+            h2.side-catalog__header ТОП 100 брендов
+            a.side-catalog__link(href="#") Все бренды
+            +brands-list('brands-list--tiny')
           +recommendations
       +delivery-block
       +sitemap
