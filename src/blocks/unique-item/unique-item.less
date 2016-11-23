@@ -1,3 +1,97 @@
 .unique-item {
+  display: flex;
   
+  &:nth-child(n+2) {
+    margin-top: 4.2rem;
+  }
+  
+  &__picture {
+    border: 2.2rem solid #f0f0f0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3.5rem;
+  }
+  
+  &__img {
+    
+  }
+  
+  &__content {
+    padding-top: .5rem;
+  }
+  
+  &__header {
+    display: flex;
+  }
+  
+  &__brand {
+    .font-first;
+    font-size: 1.6rem;
+  }
+  
+  &__name {
+    .font-first;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: .3rem;
+  }
+  
+  &__collection {
+    .font-first;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+  }
+  
+  &__notes {
+    display: flex;
+    align-items: center;
+    margin: 3.3rem 0;
+    .font-first;
+    font-size: 1.2rem;
+    font-weight: 500;
+    
+    &:before {
+      content: '';
+      display: block;
+      margin-right: 1.5rem;
+      background: url(../img/icon-note.svg) no-repeat;
+      background-size: cover;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  
+  &__dscr {
+    .font-first;
+    font-size: 1.4rem;
+  }
+  
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-top: 3.2rem;
+  }
+  
+  &__like {
+    display: flex;
+    align-items: center;
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-right: 1.9rem;
+    text-decoration: none;
+    color: #000;
+    
+    &:before {
+      content: '';
+      display: block;
+      margin-right: 1rem;
+      background: url(../img/icon-heart.svg) no-repeat;
+      background-size: cover;
+      width: 1.3rem;
+      height: 1.2rem;
+    }
+  }
 }
