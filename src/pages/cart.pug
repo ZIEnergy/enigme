@@ -29,23 +29,24 @@ html(lang='en')
               +cart-table
               .cart__login
                 h2.cart__login-header Заполните форму или авторизуйтесь:
-                .cart__login-new
-                  h3.cart__login-subheader Я здесь впервые
-                  form.cart__login-form(action="#", method="post")
-                    .input-item
-                      .input__item-header.input__item-header--required Телефон:
-                      input.input(type="text")
-                    .input-item
-                      .input__item-header.input__item-header--required Телефон:
-                      input.input(type="text")
-                    .input-item
-                      .input__item-header.input__item-header--required Телефон:
-                      input.input(type="text")
-                    button.button Оформить заказ
-                .cart__login-old
-                  h3.cart__login-subheader Я уже покупал здесь
-                  p.cart__login-text Если Вы уже делали заказ в нашем магазине, то Вы можете оформить заказ через личный кабинет
-                  a.button(href="#") Оформить через личный кабинет
+                .cart__login-content
+                  .cart__login-new
+                    h3.cart__login-subheader Я здесь впервые
+                    form.cart__login-form(action="#", method="post")
+                      .input-item.cart__login-input-item
+                        .input-item__header.input-item__header--required Телефон:
+                        input.input.cart__login-input(type="text")
+                      .input-item.cart__login-input-item
+                        .input-item__header.input-item__header--required ФИО:
+                        input.input.cart__login-input(type="text")
+                      .input-item.cart__login-input-item
+                        .input-item__header.input-item__header--required E-mail:
+                        input.input.cart__login-input(type="text")
+                      button.button.button--big.cart__login-button-new Оформить заказ
+                  .cart__login-old
+                    h3.cart__login-subheader Я уже покупал здесь
+                    p.cart__login-text Если Вы уже делали заказ в нашем магазине, то Вы можете оформить заказ через личный кабинет
+                    a.button.button--big(href="#") Оформить через личный кабинет
       +sitemap
       +footer
     include ../templates/scripts.pug

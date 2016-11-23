@@ -1,4 +1,6 @@
 .cart-table {
+  display: flex;
+  flex-direction: column;
   
   &__content {
     width: 100%;
@@ -39,12 +41,14 @@
     .font-first;
     font-size: 1.4rem;
     vertical-align: middle;
+    width: 61.8rem;
   }
   
   &__item-price {
     .font-first;
     font-size: 1.4rem;
     vertical-align: middle;
+    width: 11rem;
   }
   
   &__item-amount {
@@ -90,7 +94,6 @@
   }
   
   &__item-remove {
-    width: 4.1rem;
     vertical-align: middle;
   }
   
@@ -104,30 +107,45 @@
   }
   
   &__overall {
-    
+    padding: 2.7rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    align-self: flex-end;
   }
   
   &__overall-item {
+    display: flex;
+    justify-content: space-between;
     
   }
   
   &__overall-header {
-    
+    width: 21.5rem;
+    display: flex;
+    align-items: center;
   }
   
   &__overall-header-content {
-    
+    .font-first;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
   
   &__overall-content {
-    
+    .font-first;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: right;
   }
   
   &__advice {
-    
+    background: url(../img/icon-advice.svg) no-repeat;
+    background-size: cover;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 1rem;
   }
   
   &__final-price {
-    
+    font-weight: 500;
   }
 }

@@ -2,46 +2,46 @@ mixin registration(additionalClass)
   form.registration(action="#", method="post", class=additionalClass)
     .registration__row
       .input-item
-        .input__item-header.input__item-header--required ФИО:
+        .input-item__header.input-item__header--required ФИО:
         input.input(type="text")
       .input-item
-        .input__item-header.input__item-header--required E-mail:
+        .input-item__header.input-item__header--required E-mail:
         input.input(type="text")
       .input-item
-        .input__item-header.input__item-header--required Телефон:
+        .input-item__header.input-item__header--required Телефон:
         input.input(type="text")
     .registration__row
       .input-item
-        .input__item-header.input__item-header--required Регион/область:
+        .input-item__header.input-item__header--required Регион/область:
         input.input(type="text")
       .input-item
-        .input__item-header.input__item-header--required Уточните район:
+        .input-item__header.input-item__header--required Уточните район:
         select.input(type="text")
       .input-item
-        .input__item-header.input__item-header--required Город/район:
+        .input-item__header.input-item__header--required Город/район:
         input.input(type="text")
     .registration__row
       .input-item
-        .input__item-header.input__item-header--required Улица:
+        .input-item__header.input-item__header--required Улица:
         input.input(type="text")
     .registration__row
       .input-item
-        .input__item-header Дом:
+        .input-item__header Дом:
         input.input(type="text")
       .input-item
-        .input__item-header Корпус:
+        .input-item__header Корпус:
         input.input(type="text")
       .input-item
-        .input__item-header Строение:
+        .input-item__header Строение:
         input.input(type="text")
       .input-item
-        .input__item-header Квартира:
+        .input-item__header Квартира:
         input.input(type="text")
       .input-item
-        .input__item-header Этаж:
+        .input-item__header Этаж:
         input.input(type="text")
       .input-item
-        .input__item-header Номер домофона:
+        .input-item__header Номер домофона:
         input.input(type="text")
     .registration__password-options
       .option-item
@@ -49,10 +49,10 @@ mixin registration(additionalClass)
         +roundbutton('password', 'auto', 'Задать пароль')
     .registration__row
       .input-item
-        .input__item-header.input__item-header--required Пароль:
+        .input-item__header.input-item__header--required Пароль:
         input.input(type="text")
       .input-item
-        .input__item-header.input__item-header--required Повтор пароля:
+        .input-item__header.input-item__header--required Повтор пароля:
         input.input(type="text")
     .option-item
       +checkbox('subscribe', 'Подписка на новости и акции')
