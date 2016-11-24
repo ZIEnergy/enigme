@@ -18,10 +18,11 @@ html(lang='en')
               a.breadcrumbs__item(href="#") Бренды парфюмерии
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Поиск
             h1.section__title Найдено: (3)
-          .catalog
-            +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
-            +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
-            +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
+          .section-wrapper
+            .catalog
+              +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')
+              +item('item-2.jpg', 'Lancome', 'Hypnose', '1268')
+              +item('item-3.jpg', 'Dolce & Gabbana', '1 Million', '1236')
         .sidebar
           +cart-block
           .side-catalog
