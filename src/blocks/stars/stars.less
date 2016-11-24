@@ -1,3 +1,23 @@
 .stars {
+  display: flex;
+  align-items: center;
   
+  &__item {
+    width: 1rem;
+    height: 1rem;
+    
+    &:nth-child(n+2) {
+      margin-left: .4rem;
+    }
+    
+    &--full {
+      background: url(../img/star-full.svg) no-repeat;
+      background-size: cover;
+    }
+    
+    &--empty {
+      background: url(../img/star-empty.svg) no-repeat;
+      background-size: cover;
+    }
+  }
 }

@@ -1,3 +1,92 @@
 .discounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;
+  padding: 6rem 6rem 7rem 9.3rem;
+  position: relative;
   
+  &:before {
+    content: '';
+    display: block;
+    width: 2.7rem;
+    height: 13.5rem;
+    border: 1rem solid #f1dba0;
+    border-left: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6.75rem;
+  }
+  
+  &__header {
+    max-width: 30.5rem;
+  }
+  
+  &__title {
+    .font-first;
+    font-size: 3.8rem;
+    color: #eedcad;
+  }
+  
+  &__title-comment {
+    .font-first;
+    font-size: 2.8rem;
+    color: #eedcad;
+  }
+  
+  &__dscr {
+    .font-first;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 2.2rem;
+    color: #eedcad;
+  }
+  
+  &__content {
+    
+  }
+  
+  &__content-header {
+    .font-first;
+    font-size: 1.4rem;
+    color: #eedcad;
+    margin-bottom: 3.5rem;
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    
+    &:nth-child(n+2) {
+      margin-top: 1.6rem;
+    }
+  }
+  
+  &__item-percent {
+    .font-first;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #eedcad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6.7rem;
+    flex: 0 0 auto;
+    
+    &:after {
+      content: '/';
+      display: block;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+  }
+  
+  &__item-price {
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #eedcad;
+    margin-left: 1.6rem;
+  }
 }

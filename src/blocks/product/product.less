@@ -1,19 +1,41 @@
 .product {
   
+  &__content {
+    display: flex;
+  }
+  
   &__picture {
-    
+    margin-right: 3rem;
   }
   
   &__picture-img {
-    
+    width: 23rem;
+    height: auto;
   }
   
   &__guarantee {
-    
+    .font-first;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #f33;
+    margin: 1.5rem 0 1.2rem;
+    text-align: center;
+  }
+  
+  &__guarantee-comment {
+    font-size: 1.2rem;
+    display: block;
   }
   
   &__code {
-    
+    font-size: 1.2rem;
+    .font-first;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  &__code-number {
+    font-size: 1.4rem;
   }
   
   &__info {
@@ -21,7 +43,9 @@
   }
   
   &__top {
-    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   
   &__top-left {
@@ -29,19 +53,39 @@
   }
   
   &__brand {
-    
+    .font-first;
+    font-weight: 500;
+    font-size: 1.8rem;
   }
   
   &__title {
-    
+    .font-first;
+    font-weight: 500;
+    font-size: 2.4rem;
   }
   
   &__cart {
+    .font-first;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
     
+    &:before {
+      content: '';
+      display: block;
+      background: url(../img/icon-cart-small.svg) no-repeat;
+      background-size: cover;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin-right: 1.1rem;
+    }
   }
   
   &__middle {
-    
+    display: flex;
+    align-items: center;
+    margin-top: 3.8rem;
   }
   
   &__middle-left {
@@ -49,19 +93,29 @@
   }
   
   &__category {
-    
+    .font-first;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   
   &__rating {
-    
+    margin-top: .5rem;
+  }
+  
+  &__notes {
+    max-width: 24rem;
+    margin-left: 3.8rem;
   }
   
   &__dscr {
-    
+    .font-first;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 3rem;
   }
   
   &__options {
-    
+    margin-top: 5.8rem;
   }
   
   &__catalog {
@@ -69,6 +123,9 @@
   }
   
   &__catalog-header {
-    
+    font-size: 1.8rem;
+    font-weight: 500;
+    .font-first;
+    margin-bottom: 4rem;
   }
 }

@@ -19,31 +19,35 @@ html(lang='en')
               a.breadcrumbs__item(href="#") Hermes /
               a.breadcrumbs__item.breadcrumbs__item--active(href="#") Un Jardin Sur Le Nil
           .product
-            .product__picture
-              img.product__picture-img(src="img/product.jpg", alt="Parfume")
-              p.product__guarantee 100% гарантия подлинности качества
-              .product__code Код товара: 724
-            .product__info
-              .product__top
-                .product__top-left
-                  .product__brand Hermes
-                  h1.product__title Un Jardin En Mediterranee
-                .product__cart Перейти к покупке
-              .product__middle
-                .product__middle-left
-                  .product__category Женский аромат
-                  .product__rating
-                    +stars('full', 'full', 'full', 'full', 'empty')
-                    .notes белый олеандр, цветы апельсина, инжир, фиговое дерево, кедр
-              p.product__dscr Французский Дом моды Hermes представляет туалетную воду унисекс Un Jardin En Mediterranee. Летний, легкий всплеск аромата фруктов и цветов напоминает атмосферу Средиземноморья. Словно окунаешься, и наслаждаешься теплыми объятиями золотого пляжа, ласкового солнца и освежающего моря. Аромат наполняет морским бризом, свежим запахом бергамота. Пробуждает эмоции, передает настроение приморских садов, навевая мечты о безмятежном отдыхе. Утонченная композиция, сочетает в себе удивительные ноты белого олеандра, цветов апельсина, инжира, фигового дерева и кедра.
-          .product__options
-            +product-option('Туалетная вода 50 мл', '3144')
-            +product-option--info('Туалетная вода тестер 100 мл', '3656')
-            +product-option('Туалетная вода 100 мл', '4810')
-          .note На Enigme.ru вы можете купить духи Hermes Un Jardin En Mediterranee по низкой цене, почитать описание, ноты и отзывы об аромате Гермес Un Jardin En Mediterranee женский (for woman). Будем рады если вы оставите свой отзыв о духах, или порекомендуете наш магазин в социальных сетях.
+            .section-wrapper
+              .product__content
+                .product__picture
+                  img.product__picture-img(src="img/product.jpg", alt="Parfume")
+                  p.product__guarantee 100% гарантия 
+                    span.product__guarantee-comment подлинности качества
+                  .product__code Код товара: 
+                    span.product__code-number 724
+                .product__info
+                  .product__top
+                    .product__top-left
+                      .product__brand Hermes
+                      h1.product__title Un Jardin En Mediterranee
+                    .product__cart Перейти к покупке
+                  .product__middle
+                    .product__middle-left
+                      .product__category Женский аромат
+                      .product__rating
+                        +stars('full', 'full', 'full', 'full', 'empty')
+                    .notes.product__notes белый олеандр, цветы апельсина, инжир, фиговое дерево, кедр
+                  p.product__dscr Французский Дом моды Hermes представляет туалетную воду унисекс Un Jardin En Mediterranee. Летний, легкий всплеск аромата фруктов и цветов напоминает атмосферу Средиземноморья. Словно окунаешься, и наслаждаешься теплыми объятиями золотого пляжа, ласкового солнца и освежающего моря. Аромат наполняет морским бризом, свежим запахом бергамота. Пробуждает эмоции, передает настроение приморских садов, навевая мечты о безмятежном отдыхе. Утонченная композиция, сочетает в себе удивительные ноты белого олеандра, цветов апельсина, инжира, фигового дерева и кедра.
+              .product__options
+                +product-option('Туалетная вода 50 мл', '3144')
+                +product-option--info('Туалетная вода тестер 100 мл', '3656')
+                +product-option('Туалетная вода 100 мл', '4810')
+              .note На Enigme.ru вы можете купить духи Hermes Un Jardin En Mediterranee по низкой цене, почитать описание, ноты и отзывы об аромате Гермес Un Jardin En Mediterranee женский (for woman). Будем рады если вы оставите свой отзыв о духах, или порекомендуете наш магазин в социальных сетях.
           +delivery-method
           +discounts
-          .product__catalog
+          .product__catalog.section-wrapper
             h2.product__catalog-header Другие ароматы бренда
             .catalog
               +item('item-1.jpg', 'Nina Ricci', 'Ricci Ricci', '1268')

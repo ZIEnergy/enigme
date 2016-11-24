@@ -1,3 +1,40 @@
 .product-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 1.3rem 0;
   
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  &__name {
+    
+  }
+  
+  &__name-content {
+    .font-first;
+    font-size: 1.4rem;
+  }
+  
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__info {
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url(../img/icon-info.svg) no-repeat;
+    background-size: cover;
+    margin-left: 1rem;
+  }
+  
+  &__price {
+    .font-first;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 9rem;
+  }
 }
