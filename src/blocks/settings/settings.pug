@@ -1,34 +1,38 @@
 mixin settings(additionalClass)
   form.settings(action="#", method="post", class=additionalClass)
-    .tabs
-      +tab('Анкета', 'tab--active')
-      +tab('Смена пароля')
-      +tab('Настройки')
-    .settings__form
-      .settings__form-item
-        .settings__form-header Ваш ID:
-        .settings__form-content
-          .settings__form-text 4350
-      .settings__form-item
-        .settings__form-header E-mail:
-        .settings__form-content
-          .settings__form-text mypost922@mail.ru
-      .settings__form-item
-        .settings__form-header ФИО:
-        .settings__form-content
-          input.input(type="text")
-      .settings__form-item
-        .settings__form-header Пол:
-        .settings__form-content
-          select.input(type="text")
-      .settings__form-item
-        .settings__form-header День рождения:
-        .settings__form-content
-          select.input(type="text")
-          select.input(type="text")
-          select.input(type="text")
-      .settings__form-item
-        .settings__form-header Телефон:
-        .settings__form-content
-          input.input(type="text")
-      button.button Сохранить
+    .section-wrapper
+      .tabs
+        +tab('Анкета', 'tab--active')
+        +tab('Смена пароля')
+        +tab('Настройки')
+      .settings__form
+        .settings__form-item
+          .settings__form-header Ваш ID:
+          .settings__form-content
+            .settings__form-text 4350
+        .settings__form-item
+          .settings__form-header E-mail:
+          .settings__form-content
+            .settings__form-text mypost922@mail.ru
+        .settings__form-item
+          .settings__form-header ФИО:
+          .settings__form-content
+            input.input.settings__input(type="text")
+        .settings__form-item
+          .settings__form-header Пол:
+          .settings__form-content
+            select.input.select.settings__input(type="text")
+        .settings__form-item
+          .settings__form-header День рождения:
+          .settings__form-content
+            select.input.select.settings__select(type="text")
+              option(selected) День
+            select.input.select.settings__select(type="text")
+              option(selected) Месяц
+            select.input.select.settings__select(type="text")
+              option(selected) Год
+        .settings__form-item
+          .settings__form-header Телефон:
+          .settings__form-content
+            input.input.settings__input(type="text")
+        button.button.button--big.settings__button Сохранить
