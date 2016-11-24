@@ -32,6 +32,8 @@ $(document).ready(function(){
 
 
 
+$(".modal-link").magnificPopup({type:"inline"});
+
 
 
 

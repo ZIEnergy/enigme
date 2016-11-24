@@ -1,0 +1,11 @@
+mixin restore(additionalClass)
+  form.restore.modal.mfp-hide#restore(action="#", method="post", class=additionalClass)
+    .mfp-close
+    h2.modal__header Восстановление пароля
+    .tabs.restore__tabs
+      +tab('Ввести email', 'tab--active', 'restore__tab')
+      +tab('Ввести телефон', 'restore__tab')
+    .input-item.modal__input-item
+      .input-item__header.input-item__header--required Email:
+      input.input.modal__input(type="text")
+    button.button.button--big.modal__button Войти

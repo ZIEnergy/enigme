@@ -1,0 +1,12 @@
+mixin login(additionalClass)
+  form.login.modal.mfp-hide#login(action="#", method="post", class=additionalClass)
+    .mfp-close
+    h2.modal__header Авторизация
+    .input-item.modal__input-item
+      .input-item__header.input-item__header--required Email:
+      input.input.modal__input(type="text")
+    .input-item.modal__input-item
+      .input-item__header.input-item__header--required Пароль:
+      input.input.modal__input(type="text")
+    a.login__lost.modal-link(href="#restore") Забыли пароль?
+    button.button.button--big.modal__button Войти
