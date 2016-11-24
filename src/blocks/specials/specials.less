@@ -1,3 +1,52 @@
 .specials {
   
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 33.8rem;
+    padding-right: 7.5rem;
+    
+    &:nth-child(n+2) {
+      border-top: 1px solid #e4e4e4;
+    }
+  }
+  
+  &__item-picture {
+    width: 33.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  
+  &__item-img {
+    
+  }
+  
+  &__item-content {
+    
+  }
+  
+  &__item-header {
+    .font-first;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  
+  &__item-dscr {
+    .font-first;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-top: 1.5rem;
+  }
+  
+  &__item-text {
+    .font-first;
+    font-size: 1.4rem;
+  }
+  
+  &__button {
+    margin-top: 3rem;
+  }
 }
