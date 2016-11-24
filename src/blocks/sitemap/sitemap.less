@@ -4,6 +4,10 @@
   
   &__item {
     width: 25%;
+    
+    &:nth-child(n+2) {
+      padding-left: 1rem;
+    }
   }
   
   &__header {
@@ -19,6 +23,7 @@
   &__link {
     .font-first;
     font-size: 1.4rem;
+    line-height: 1.6rem;
     text-decoration: none;
     display: block;
     color: #000;
