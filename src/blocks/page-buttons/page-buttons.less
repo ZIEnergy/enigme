@@ -1,8 +1,12 @@
 .page-buttons {
   position: fixed;
-  right: 9.5%;
+  right: 2%;
   top: 50%;
   margin-top: -9.2rem;
+  
+  @media screen and (max-width: 1230px) {
+    display: none;
+  }
   
   &__go-top {
     margin-top: 3.4rem;
