@@ -1,3 +1,42 @@
 .checkbox {
+  display: flex;
+  align-items: center;
   
+  &:nth-child(n+2) {
+    margin-top: 1.3rem;
+  }
+  
+  &__hidden {
+    display: none;
+    
+    &:checked + .checkbox__fake {
+    
+      &:after {
+        content: '';
+        display: block;
+        width: .6rem;
+        height: .6rem;
+        background: #000;
+      }
+    }
+  }
+  
+  &__fake {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 2px;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  &__label {
+    margin-left: 1.4rem;
+    .font-first;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
 }

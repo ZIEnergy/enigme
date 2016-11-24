@@ -1,59 +1,58 @@
 mixin registration(additionalClass)
   form.registration(action="#", method="post", class=additionalClass)
-    .registration__row
-      .input-item
-        .input-item__header.input-item__header--required ФИО:
-        input.input(type="text")
-      .input-item
-        .input-item__header.input-item__header--required E-mail:
-        input.input(type="text")
-      .input-item
-        .input-item__header.input-item__header--required Телефон:
-        input.input(type="text")
-    .registration__row
-      .input-item
-        .input-item__header.input-item__header--required Регион/область:
-        input.input(type="text")
-      .input-item
-        .input-item__header.input-item__header--required Уточните район:
-        select.input(type="text")
-      .input-item
-        .input-item__header.input-item__header--required Город/район:
-        input.input(type="text")
-    .registration__row
-      .input-item
-        .input-item__header.input-item__header--required Улица:
-        input.input(type="text")
-    .registration__row
-      .input-item
-        .input-item__header Дом:
-        input.input(type="text")
-      .input-item
-        .input-item__header Корпус:
-        input.input(type="text")
-      .input-item
-        .input-item__header Строение:
-        input.input(type="text")
-      .input-item
-        .input-item__header Квартира:
-        input.input(type="text")
-      .input-item
-        .input-item__header Этаж:
-        input.input(type="text")
-      .input-item
-        .input-item__header Номер домофона:
-        input.input(type="text")
-    .registration__password-options
-      .option-item
-        +roundbutton('password', 'auto', 'Сгенерировать пароль автоматически')
-        +roundbutton('password', 'auto', 'Задать пароль')
-    .registration__row
-      .input-item
-        .input-item__header.input-item__header--required Пароль:
-        input.input(type="text")
-      .input-item
-        .input-item__header.input-item__header--required Повтор пароля:
-        input.input(type="text")
-    .option-item
+    .section-wrapper
+      .registration__row
+        .input-item
+          .input-item__header.input-item__header--required ФИО:
+          input.input.registration__input(type="text")
+        .input-item
+          .input-item__header.input-item__header--required E-mail:
+          input.input.registration__input(type="text")
+        .input-item
+          .input-item__header.input-item__header--required Телефон:
+          input.input.registration__input(type="text")
+      .registration__row
+        .input-item
+          .input-item__header.input-item__header--required Регион/область:
+          input.input.registration__input(type="text")
+        .input-item
+          .input-item__header.input-item__header--required Уточните район:
+          select.input.select.registration__input(type="text")
+        .input-item
+          .input-item__header.input-item__header--required Город/район:
+          input.input.registration__input(type="text")
+      .registration__row
+        .input-item
+          .input-item__header.input-item__header--required Улица:
+          input.input.registration__street(type="text")
+      .registration__row
+        .input-item
+          .input-item__header Дом:
+          input.input.registration__input--short(type="text")
+        .input-item
+          .input-item__header Корпус:
+          input.input.registration__input--short(type="text")
+        .input-item
+          .input-item__header Строение:
+          input.input.registration__input--short(type="text")
+        .input-item
+          .input-item__header Квартира:
+          input.input.registration__input--short(type="text")
+        .input-item
+          .input-item__header Этаж:
+          input.input.registration__input--short(type="text")
+        .input-item
+          .input-item__header Номер домофона:
+          input.input.registration__intercom(type="text")
+      .registration__password-options
+        +roundbutton('auto', 'password', 'Сгенерировать пароль автоматически')
+        +roundbutton('manual', 'password', 'Задать пароль')
+      .registration__row
+        .input-item
+          .input-item__header.input-item__header--required Пароль:
+          input.input.registration__password(type="text")
+        .input-item
+          .input-item__header.input-item__header--required Повтор пароля:
+          input.input.registration__password(type="text")
       +checkbox('subscribe', 'Подписка на новости и акции')
-    button.button Зарегистрироваться
+      button.button.button--big.registration__button Зарегистрироваться

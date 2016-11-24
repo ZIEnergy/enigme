@@ -1,4 +1,5 @@
-mixin roundbutton(additionalClass)
+mixin roundbutton(id, name, content, additionalClass)
   .roundbutton(class=additionalClass)
-    input.roundbutton__hidden(type="radio", id=id)
+    input.roundbutton__hidden(type="radio", name=name, id=id)
     label.roundbutton__fake(for=id)
+    label.roundbutton__label(for=id) #{content}

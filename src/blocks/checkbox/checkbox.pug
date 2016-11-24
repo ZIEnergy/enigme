@@ -1,4 +1,5 @@
-mixin checkbox(id, additionalClass)
+mixin checkbox(id, content, additionalClass)
   .checkbox(class=additionalClass)
     input.checkbox__hidden(type="checkbox", id=id)
     label.checkbox__fake(for=id)
+    label.checkbox__label(for=id) #{content}
