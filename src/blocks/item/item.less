@@ -2,6 +2,7 @@
   display: inline-block;
   text-decoration: none;
   margin-left: 4.7rem;
+  max-width: 23rem;
   
   &:nth-child(3n+1) {
     margin-left: 0;
@@ -9,6 +10,13 @@
   
   &:nth-child(n+4) {
     margin-top: 4.15rem;
+  }
+  
+  &:hover {
+    
+    .item__picture {
+      border-color: darken(#f0f0f0, 12%);
+    }
   }
   
   &__picture {
@@ -19,10 +27,11 @@
     align-items: center;
     background: #fff;
     border: 2.2rem solid #f0f0f0;
+    .transition;
   }
   
   &__img {
-    
+    width: 100%;
   }
   
   &__bottom {
@@ -34,7 +43,7 @@
   }
   
   &__info {
-    
+    max-width: 14rem
   }
   
   &__brand {

@@ -6,6 +6,10 @@
     color: #000;
     text-decoration: none;
     
+    &:hover {
+      text-decoration: underline;
+    }
+    
     &:after {
       content: '/';
       display: inline-block;
@@ -14,6 +18,7 @@
     
     &--active {
       color: #999;
+      pointer-events: none;
       
       &:after {
         display: none;

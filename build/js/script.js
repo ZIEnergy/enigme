@@ -64,4 +64,4 @@ $(".modal-link").magnificPopup({type:"inline"});
 
 
 
-})
+$(window).width()<1140&&$(function(){$(window).bind("resize",function(){resizeMe()}).trigger("resize")});var resizeMe=function(){var i=1230,e=10,n=$(window).width(),r=n/i,t=e*r;$("html").css("font-size",t)};})
